@@ -93,7 +93,7 @@
      --> 
 	${tomcat.connectors.ajp.plain}	
 
-    <Engine name="Catalina" defaultHost="localhost" startStopThreads="${tomcat.startStopThreads}">
+    <Engine name="Catalina" defaultHost="localhost"  jvmRoute="ChangeMe" startStopThreads="${tomcat.startStopThreads}">
 
 			<Valve 	className="org.apache.catalina.valves.AccessLogValve"
              		directory="${HYBRIS_LOG_DIR}/tomcat"
