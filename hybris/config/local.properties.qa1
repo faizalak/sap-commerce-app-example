@@ -5,3 +5,10 @@
 ###QA Testing Platfom
 
 initialpassword.admin=admin
+clustermode=true
+cluster.id=1
+cluster.maxid=10
+cluster.broadcast.ethods=udp
+cluster.broadcast.method.udp.multicastaddress=10.128.0.0
+cluster.broadcast.method.udp.port=9999
+cluster.broadcast.method.udp.networkinterface
