@@ -11,4 +11,4 @@ cluster.maxid=10
 cluster.broadcast.methods=udp
 cluster.broadcast.method.udp.multicastaddress=224.1.0.1
 cluster.broadcast.method.udp.port=9997
-cluster.broadcast.method.udp.networkinterface
+cluster.broadcast.method.udp.networkinterface=eth0
