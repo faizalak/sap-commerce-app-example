@@ -6,8 +6,9 @@
 
 initialpassword.admin=admin
 clustermode=true
-cluster.id=1
-cluster.maxid=10
+#cluster.id=1
+#cluster.maxid=10
+cluster.nodes.autodiscovery=true
 cluster.broadcast.methods=udp
 cluster.broadcast.method.udp.multicastaddress=224.1.0.1
 cluster.broadcast.method.udp.port=9997
