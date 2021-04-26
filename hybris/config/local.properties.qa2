@@ -6,9 +6,11 @@
 
 initialpassword.admin=admin
 clustermode=true
-cluster.id=2
-cluster.maxid=10
+#cluster.id=2
+#cluster.maxid=10
+cluster.nodes.autodiscovery=true
 cluster.broadcast.methods=udp
 cluster.broadcast.method.udp.multicastaddress=224.1.0.1
 cluster.broadcast.method.udp.port=9997
 cluster.broadcast.method.udp.networkinterface=eth0
+tomcat.generaloptions=-Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses=true
