@@ -9,11 +9,18 @@ clustermode=true
 #cluster.id=2
 #cluster.maxid=10
 cluster.nodes.autodiscovery=true
-cluster.broadcast.methods=udp
-cluster.broadcast.method.udp.multicastaddress=224.1.0.1
-cluster.broadcast.method.udp.port=9997
-cluster.broadcast.method.udp.networkinterface=eth0
-tomcat.generaloptions=-Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses=true
+cluster.broadcast.methods=jgroups
+#cluster.broadcast.method.udp.multicastaddress=224.1.0.1
+#cluster.broadcast.method.udp.port=9997
+#cluster.broadcast.method.udp.networkinterface=eth0
+#tomcat.generaloptions=-Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses=true
+
+cluster.broadcast.method.jgroups=de.hybris.platform.cluster.jgroups.JGroupsBroadcastMethod
+cluster.broadcast.method.jgroups.tcp.bind_addr=localhost
+cluster.broadcast.method.jgroups.tcp.bind_port=7800
+cluster.broadcast.method.jgroups.channel.name=hybris-broadcast
+cluster.broadcast.method.jgroups.configuration=jgroups-udp.xml
+
 
 # connection
 db.url=jdbc:mysql://mysql:3306/hybrisdb?useConfigs=maxPerformance&characterEncoding=utf8
