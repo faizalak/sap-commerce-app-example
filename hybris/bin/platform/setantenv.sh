@@ -1,3 +1,4 @@
+######This is my customer version checking for change
 #!/bin/sh
 OWN_NAME=setantenv.sh
 BASENAME="$(basename -- "$0")"
