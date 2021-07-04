@@ -81,7 +81,7 @@
                    secure="true"
                    clientAuth="false"
                    sslProtocol="TLS"
-                   keyAlias="hybris"
+                   keyAlias="1"
                    keystoreFile="${catalina.home}/lib/keystore"
                    keystorePass="123456"
         />
