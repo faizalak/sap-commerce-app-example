@@ -18,6 +18,8 @@ cluster.broadcast.method.udp.port=9997
 cluster.broadcast.method.udp.networkinterface=eth0
 tomcat.generaloptions=-Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses=true
 
+tomcat.ssl.keystore.alias=hybris
+
 #cluster.broadcast.method.jgroups=de.hybris.platform.cluster.jgroups.JGroupsBroadcastMethod
 #cluster.broadcast.method.jgroups.tcp.bind_addr=localhost
 #cluster.broadcast.method.jgroups.tcp.bind_port=7800
